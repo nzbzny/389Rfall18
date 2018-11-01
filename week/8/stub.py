@@ -106,7 +106,7 @@ def deal_with_body(st, sl): #stype, slen
         lst = []
         i = 0
         while (i < sl / 8):
-            s = struct.unpack('<L', data[curr_loc:curr_loc + SIZEOF_DOUBLE])
+            s = struct.unpack('<d', data[curr_loc:curr_loc + SIZEOF_DOUBLE])
             curr_loc += SIZEOF_DOUBLE
             lst.append(s)
             i += 1
@@ -131,7 +131,7 @@ def deal_with_body(st, sl): #stype, slen
             return
         lat, lng = struct.unpack('<dd', data[curr_loc:curr_loc + sl])
         curr_loc += sl
-        print('(%d, %d)' % (lat, lng))
+        print('(%f, %f)' % (lat, lng))
     elif st == SECTION_REFERENCE:
         if sl != 4 and sl != 0:
             bork('reference slen is incorrect: expected 4 but received %d' % sl)

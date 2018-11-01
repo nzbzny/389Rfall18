@@ -61,5 +61,5 @@ dwords:
 \[4, 8, 15, 16, 23, 42\]  
 
 5. CMSC389R-\{c0rn3rst0ne\_airlin3s\_to\_the\_m00n\} - found in the image file  
-CMSC389R-\{PIN\_IF\_FLAG\} - found by diffing the steganography paragraph with the wikipedia article for it  
+CMSC389R-\{PlaIN\_dIfF\_FLAG\} - found by diffing the steganography paragraph with the wikipedia article for it  
 CMSC389R-\{h1dd3n-s3ct10n-1n-fil3\} - found by base64 decoding section 10, the last ascii section
